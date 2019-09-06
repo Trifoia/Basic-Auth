@@ -6,6 +6,13 @@ request, and should only be used over SSL-secured connections or for local
 development and testing. Without SSL we strongly recommend using the
 [OAuth 1.0a][oauth] authentication handler in production environments.
 
+## Fork Changes
+This fork of the Basic-Auth plugin differs from the original project in the following ways:
+- A new endpoint is created (`/wp-json/basic-auth/v1/check-auth`) that gives a simple response if verification succeeds
+- Basic authentication will only work for the newly created endpoint
+- If authentication explicitly fails, the request will hang for a few seconds before returning a response
+- Multiple authentication attempts can not be made by the same user simultaneously
+
 ## Installing
 1. Download the plugin into your plugins directory
 2. Enable in the WordPress admin
