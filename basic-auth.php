@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: JSON Basic Authentication
- * Description: Basic Authentication handler for the JSON API, used for development and debugging purposes
+ * Description: Fork of the Basic Authentication handler for the JSON API
  * Author: WordPress API Team
  * Author URI: https://github.com/WP-API
- * Version: 0.2
- * Plugin URI: https://github.com/WP-API/Basic-Auth
+ * Version: 0.3
+ * Plugin URI: https://github.com/Trifoia/Basic-Auth
  */
 function json_basic_auth_handler( $user ) {
 	global $wp_json_basic_auth_error;
